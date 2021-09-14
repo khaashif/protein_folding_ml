@@ -1,0 +1,28 @@
+*DATA: 	
+"approved_compounds.csv" - list of FDA approved drug compounds
+"data.txt" - human compound-protein interactions from Tsubaki et al.
+"protacs.csv" - PROTAC warhead data from PROTAC-DB  (with less columns)
+"prot.csv"    - PROTAC warhead data from PROTAQC-DB (with more columns)
+
+
+*NEURAL NETWORK CODE:
+"nn-excl-106.py" - neural network model excluding 106 shared proteins from training data
+"nn-excl-106-4-5-folds.py" - as above including PROTAC 4/5 folds in training
+
+
+*SUPPORT VECTOR MACHINE CODE:
+"svm-excl-106.py" - SVM model excluding 106 shared proteins from training data
+"svm-excl-106-4-5-folds.py" - SVM model excluding 106 shared proteins from training data
+
+
+*HUMAN PROTEOME CSV GENERATION CODE:
+"nn-incl-106-human_proteome.py" - NN model INCLUDING 106 shared proteins in training
+"nn-incl-106-4-5-folds-human_proteome.py" - NN model INCLUDING 106 shared proteins and PROTACs 4/5 folds in training
+
+*PLOT RESULTS:
+"diss_results_plot.py" - results stored and plot here, result sets are split into code blocks
+
+Regenerate has been set to false for all scripts.
+
+To run the code, if the user wishes to utilize the regenerate code block, then simply set the if statement as "regenerate=True" 
+and input desired ratio.
